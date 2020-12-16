@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using InfluxDB.Studio;
+using InfluxDB.Studio.Properties;
 using CymaticLabs.InfluxDB.Data;
 
 namespace CymaticLabs.InfluxDB.Studio
@@ -63,8 +65,8 @@ namespace CymaticLabs.InfluxDB.Studio
                 if (timeFormat != value)
                 {
                     timeFormat = value;
-                    Properties.Settings.Default.TimeFormat = timeFormat;
-                    Properties.Settings.Default.Save(); // update settings file
+                    Settings.Default.TimeFormat = timeFormat;
+                    Settings.Default.Save(); // update settings file
                 }
             }
         }
@@ -81,8 +83,8 @@ namespace CymaticLabs.InfluxDB.Studio
                 if (dateFormat != value)
                 {
                     dateFormat = value;
-                    Properties.Settings.Default.DateFormat = dateFormat;
-                    Properties.Settings.Default.Save(); // update settings file
+                    Settings.Default.DateFormat = dateFormat;
+                    Settings.Default.Save(); // update settings file
                 }
             }
         }
@@ -100,8 +102,8 @@ namespace CymaticLabs.InfluxDB.Studio
                 if (allowUntrustedSsl != value)
                 {
                     allowUntrustedSsl = value;
-                    Properties.Settings.Default.AllowUntrustedSsl = allowUntrustedSsl;
-                    Properties.Settings.Default.Save(); // update settings file
+                    Settings.Default.AllowUntrustedSsl = allowUntrustedSsl;
+                    Settings.Default.Save(); // update settings file
                 }
             }
         }
@@ -127,7 +129,7 @@ namespace CymaticLabs.InfluxDB.Studio
             Version = GetType().Assembly.GetName().Version.ToString();
 
             // Upgrade settings as needed
-            Properties.Settings.Default.Upgrade();
+            Settings.Default.Upgrade();
         }
 
         #endregion Constructors
@@ -139,9 +141,9 @@ namespace CymaticLabs.InfluxDB.Studio
         /// </summary>
         public void LoadAll()
         {
-            timeFormat = Properties.Settings.Default.TimeFormat;
-            dateFormat = Properties.Settings.Default.DateFormat;
-            allowUntrustedSsl = Properties.Settings.Default.AllowUntrustedSsl;
+            timeFormat = Settings.Default.TimeFormat;
+            dateFormat = Settings.Default.DateFormat;
+            allowUntrustedSsl = Settings.Default.AllowUntrustedSsl;
             LoadConnections();
         }
 
@@ -150,9 +152,9 @@ namespace CymaticLabs.InfluxDB.Studio
         /// </summary>
         public void SaveAll()
         {
-            Properties.Settings.Default.TimeFormat = TimeFormat;
-            Properties.Settings.Default.DateFormat = DateFormat;
-            Properties.Settings.Default.AllowUntrustedSsl = AllowUntrustedSsl;
+            Settings.Default.TimeFormat = TimeFormat;
+            Settings.Default.DateFormat = DateFormat;
+            Settings.Default.AllowUntrustedSsl = AllowUntrustedSsl;
             SaveConnections();
         }
 
@@ -161,7 +163,7 @@ namespace CymaticLabs.InfluxDB.Studio
         /// </summary>
         public void LoadConnections()
         {
-            var json = Properties.Settings.Default.ConnectionsJson;
+            var json = Settings.Default.ConnectionsJson;
             var loadedConnections = Newtonsoft.Json.JsonConvert.DeserializeObject(json);
             Connections = new List<InfluxDbConnection>();
 
@@ -194,8 +196,8 @@ namespace CymaticLabs.InfluxDB.Studio
             {
                 // Save to disk
                 var json = JsonConvert.SerializeObject(Connections);
-                Properties.Settings.Default.ConnectionsJson = json;
-                Properties.Settings.Default.Save();
+                Settings.Default.ConnectionsJson = json;
+                Settings.Default.Save();
             }
             catch (Exception ex)
             {

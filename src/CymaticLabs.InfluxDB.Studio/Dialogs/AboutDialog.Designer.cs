@@ -45,7 +45,7 @@
             // 
             // influxDBLogo
             // 
-            this.influxDBLogo.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.influxdb_logo;
+            this.influxDBLogo.Image = global::CymaticLabs.InfluxDB.Studio.Resources.influxdb_logo;
             this.influxDBLogo.Location = new System.Drawing.Point(12, 12);
             this.influxDBLogo.Name = "influxDBLogo";
             this.influxDBLogo.Size = new System.Drawing.Size(165, 165);

@@ -121,7 +121,7 @@
             // 
             // resampleForInfo
             // 
-            this.resampleForInfo.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.Info;
+            this.resampleForInfo.Image = global::CymaticLabs.InfluxDB.Studio.Resources.Info;
             this.resampleForInfo.Location = new System.Drawing.Point(562, 172);
             this.resampleForInfo.Name = "resampleForInfo";
             this.resampleForInfo.Size = new System.Drawing.Size(16, 16);
@@ -149,7 +149,7 @@
             // 
             // resampleInfo
             // 
-            this.resampleInfo.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.Info;
+            this.resampleInfo.Image = global::CymaticLabs.InfluxDB.Studio.Resources.Info;
             this.resampleInfo.Location = new System.Drawing.Point(157, 173);
             this.resampleInfo.Name = "resampleInfo";
             this.resampleInfo.Size = new System.Drawing.Size(16, 16);
@@ -158,7 +158,7 @@
             // 
             // resampleEveryInfo
             // 
-            this.resampleEveryInfo.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.Info;
+            this.resampleEveryInfo.Image = global::CymaticLabs.InfluxDB.Studio.Resources.Info;
             this.resampleEveryInfo.Location = new System.Drawing.Point(376, 172);
             this.resampleEveryInfo.Name = "resampleEveryInfo";
             this.resampleEveryInfo.Size = new System.Drawing.Size(16, 16);
@@ -167,7 +167,7 @@
             // 
             // tagsInfo
             // 
-            this.tagsInfo.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.Info;
+            this.tagsInfo.Image = global::CymaticLabs.InfluxDB.Studio.Resources.Info;
             this.tagsInfo.Location = new System.Drawing.Point(562, 138);
             this.tagsInfo.Name = "tagsInfo";
             this.tagsInfo.Size = new System.Drawing.Size(16, 16);
@@ -176,7 +176,7 @@
             // 
             // fillTypeInfo
             // 
-            this.fillTypeInfo.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.Info;
+            this.fillTypeInfo.Image = global::CymaticLabs.InfluxDB.Studio.Resources.Info;
             this.fillTypeInfo.Location = new System.Drawing.Point(485, 101);
             this.fillTypeInfo.Name = "fillTypeInfo";
             this.fillTypeInfo.Size = new System.Drawing.Size(16, 16);
@@ -185,7 +185,7 @@
             // 
             // intervalInfo
             // 
-            this.intervalInfo.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.Info;
+            this.intervalInfo.Image = global::CymaticLabs.InfluxDB.Studio.Resources.Info;
             this.intervalInfo.Location = new System.Drawing.Point(193, 101);
             this.intervalInfo.Name = "intervalInfo";
             this.intervalInfo.Size = new System.Drawing.Size(16, 16);
@@ -432,7 +432,7 @@
             // 
             // destinationInfo
             // 
-            this.destinationInfo.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.Info;
+            this.destinationInfo.Image = global::CymaticLabs.InfluxDB.Studio.Resources.Info;
             this.destinationInfo.Location = new System.Drawing.Point(270, 66);
             this.destinationInfo.Name = "destinationInfo";
             this.destinationInfo.Size = new System.Drawing.Size(16, 16);
@@ -441,7 +441,7 @@
             // 
             // sourceInfo
             // 
-            this.sourceInfo.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.Info;
+            this.sourceInfo.Image = global::CymaticLabs.InfluxDB.Studio.Resources.Info;
             this.sourceInfo.Location = new System.Drawing.Point(562, 66);
             this.sourceInfo.Name = "sourceInfo";
             this.sourceInfo.Size = new System.Drawing.Size(16, 16);

@@ -9,6 +9,7 @@ using Newtonsoft.Json;
 using CymaticLabs.InfluxDB.Data;
 using CymaticLabs.InfluxDB.Studio.Controls;
 using CymaticLabs.InfluxDB.Studio.Dialogs;
+using InfluxDB.Studio;
 
 namespace CymaticLabs.InfluxDB.Studio
 {
@@ -933,7 +934,7 @@ namespace CymaticLabs.InfluxDB.Studio
                 policyControl.InfluxDbClient = client;
 
                 // Add a tab with a query control in it
-                tabControl.AddTabWithControl(connection.Name + ".policies", policyControl, Properties.Resources.RetentionPolicy);
+                tabControl.AddTabWithControl(connection.Name + ".policies", policyControl, Resources.RetentionPolicy);
 
                 // Update UI
                 UpdateUIState();
@@ -961,7 +962,7 @@ namespace CymaticLabs.InfluxDB.Studio
                 usersControl.InfluxDbClient = client;
 
                 // Add a tab with a query control in it
-                tabControl.AddTabWithControl(connection.Name + ".users", usersControl, Properties.Resources.Users);
+                tabControl.AddTabWithControl(connection.Name + ".users", usersControl, Resources.Users);
 
                 // Update UI
                 UpdateUIState();
@@ -989,7 +990,7 @@ namespace CymaticLabs.InfluxDB.Studio
                 statsControl.InfluxDbClient = client;
 
                 // Add a tab with a query control in it
-                tabControl.AddTabWithControl(connection.Name + ".statistics", statsControl, Properties.Resources.Stats);
+                tabControl.AddTabWithControl(connection.Name + ".statistics", statsControl, Resources.Stats);
 
                 // Update UI
                 UpdateUIState();
@@ -1017,7 +1018,7 @@ namespace CymaticLabs.InfluxDB.Studio
                 diagnosticsControl.InfluxDbClient = client;
 
                 // Add a tab with a query control in it
-                tabControl.AddTabWithControl(connection.Name + ".diagnostics", diagnosticsControl, Properties.Resources.Diagnostics);
+                tabControl.AddTabWithControl(connection.Name + ".diagnostics", diagnosticsControl, Resources.Diagnostics);
 
                 // Update UI
                 UpdateUIState();
@@ -1124,7 +1125,7 @@ namespace CymaticLabs.InfluxDB.Studio
 
                 // Add a tab with a query control in it
                 tabControl.AddTabWithControl(connection.Name + "." + database + " CQs", 
-                    continousQueryControl, Properties.Resources.ContinuousQuery);
+                    continousQueryControl, Resources.ContinuousQuery);
 
                 UpdateUIState();
 
@@ -1244,7 +1245,7 @@ namespace CymaticLabs.InfluxDB.Studio
 
                 // Add a tab with a series control in it
                 tabControl.AddTabWithControl(connection.Name + "." + measurement + ".series", 
-                    seriesControl, Properties.Resources.Series);
+                    seriesControl, Resources.Series);
 
                 // Update UI
                 UpdateUIState();
@@ -1276,7 +1277,7 @@ namespace CymaticLabs.InfluxDB.Studio
 
                 // Add a tab with a tag keys control in it
                 tabControl.AddTabWithControl(connection.Name + "." + measurement + ".tag_keys", 
-                    tagKeysControl, Properties.Resources.TagKeys);
+                    tagKeysControl, Resources.TagKeys);
 
                 // Update UI
                 UpdateUIState();
@@ -1308,7 +1309,7 @@ namespace CymaticLabs.InfluxDB.Studio
 
                 // Add a tab with a tag values control in it
                 tabControl.AddTabWithControl(connection.Name + "." + measurement + ".tag_values", 
-                    tagValuesControl, Properties.Resources.TagValues);
+                    tagValuesControl, Resources.TagValues);
 
                 // Update UI
                 UpdateUIState();
@@ -1340,7 +1341,7 @@ namespace CymaticLabs.InfluxDB.Studio
 
                 // Add a tab with a query control in it
                 tabControl.AddTabWithControl(connection.Name + "." + measurement + ".field_keys", 
-                    fieldKeysControl, Properties.Resources.FieldKeys);
+                    fieldKeysControl, Resources.FieldKeys);
 
                 // Update UI
                 UpdateUIState();
@@ -1487,7 +1488,7 @@ namespace CymaticLabs.InfluxDB.Studio
                 queryControl.EditorText = string.Format("SELECT * FROM \"{0}\" WHERE time > now() - 5m", measurement);
 
                 // Add a tab with a query control in it
-                tabControl.AddTabWithControl(connection.Name + "." + database, queryControl, Properties.Resources.RunQuery);
+                tabControl.AddTabWithControl(connection.Name + "." + database, queryControl, Resources.RunQuery);
 
                 // Update UI
                 UpdateUIState();
@@ -1515,7 +1516,7 @@ namespace CymaticLabs.InfluxDB.Studio
 
                 // Add a tab with a query control in it
                 tabControl.AddTabWithControl(connection.Name + ".queries",
-                    runningQueriesControl, Properties.Resources.ShowQueries);
+                    runningQueriesControl, Resources.ShowQueries);
 
                 UpdateUIState();
 

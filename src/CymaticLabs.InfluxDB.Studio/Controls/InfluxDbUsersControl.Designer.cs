@@ -106,7 +106,7 @@
             // 
             // createUserButton
             // 
-            this.createUserButton.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.CreateUser;
+            this.createUserButton.Image = global::CymaticLabs.InfluxDB.Studio.Resources.CreateUser;
             this.createUserButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.createUserButton.Name = "createUserButton";
             this.createUserButton.Size = new System.Drawing.Size(87, 22);
@@ -115,7 +115,7 @@
             // 
             // editUserButton
             // 
-            this.editUserButton.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.EditUser;
+            this.editUserButton.Image = global::CymaticLabs.InfluxDB.Studio.Resources.EditUser;
             this.editUserButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.editUserButton.Name = "editUserButton";
             this.editUserButton.Size = new System.Drawing.Size(73, 22);
@@ -124,7 +124,7 @@
             // 
             // changePasswordButton
             // 
-            this.changePasswordButton.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.Password;
+            this.changePasswordButton.Image = global::CymaticLabs.InfluxDB.Studio.Resources.Password;
             this.changePasswordButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.changePasswordButton.Name = "changePasswordButton";
             this.changePasswordButton.Size = new System.Drawing.Size(121, 22);
@@ -133,7 +133,7 @@
             // 
             // dropUserButton
             // 
-            this.dropUserButton.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.DropUser;
+            this.dropUserButton.Image = global::CymaticLabs.InfluxDB.Studio.Resources.DropUser;
             this.dropUserButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.dropUserButton.Name = "dropUserButton";
             this.dropUserButton.Size = new System.Drawing.Size(79, 22);
@@ -185,7 +185,7 @@
             // 
             // createUserToolStripMenuItem
             // 
-            this.createUserToolStripMenuItem.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.CreateUser;
+            this.createUserToolStripMenuItem.Image = global::CymaticLabs.InfluxDB.Studio.Resources.CreateUser;
             this.createUserToolStripMenuItem.Name = "createUserToolStripMenuItem";
             this.createUserToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.createUserToolStripMenuItem.Text = "Create User";
@@ -193,7 +193,7 @@
             // 
             // editUserToolStripMenuItem
             // 
-            this.editUserToolStripMenuItem.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.EditUser;
+            this.editUserToolStripMenuItem.Image = global::CymaticLabs.InfluxDB.Studio.Resources.EditUser;
             this.editUserToolStripMenuItem.Name = "editUserToolStripMenuItem";
             this.editUserToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.editUserToolStripMenuItem.Text = "Edit User";
@@ -201,7 +201,7 @@
             // 
             // changePasswordToolStripMenuItem
             // 
-            this.changePasswordToolStripMenuItem.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.Password;
+            this.changePasswordToolStripMenuItem.Image = global::CymaticLabs.InfluxDB.Studio.Resources.Password;
             this.changePasswordToolStripMenuItem.Name = "changePasswordToolStripMenuItem";
             this.changePasswordToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.changePasswordToolStripMenuItem.Text = "Change Password";
@@ -209,7 +209,7 @@
             // 
             // dropUserToolStripMenuItem
             // 
-            this.dropUserToolStripMenuItem.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.DropUser;
+            this.dropUserToolStripMenuItem.Image = global::CymaticLabs.InfluxDB.Studio.Resources.DropUser;
             this.dropUserToolStripMenuItem.Name = "dropUserToolStripMenuItem";
             this.dropUserToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.dropUserToolStripMenuItem.Text = "Drop User";
@@ -267,7 +267,7 @@
             // 
             // grantPrivilegeToolStripMenuItem
             // 
-            this.grantPrivilegeToolStripMenuItem.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.GrantPrivilege;
+            this.grantPrivilegeToolStripMenuItem.Image = global::CymaticLabs.InfluxDB.Studio.Resources.GrantPrivilege;
             this.grantPrivilegeToolStripMenuItem.Name = "grantPrivilegeToolStripMenuItem";
             this.grantPrivilegeToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.grantPrivilegeToolStripMenuItem.Text = "Grant Privilege";
@@ -275,7 +275,7 @@
             // 
             // editPrivilegeToolStripMenuItem
             // 
-            this.editPrivilegeToolStripMenuItem.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.EditPrivilege;
+            this.editPrivilegeToolStripMenuItem.Image = global::CymaticLabs.InfluxDB.Studio.Resources.EditPrivilege;
             this.editPrivilegeToolStripMenuItem.Name = "editPrivilegeToolStripMenuItem";
             this.editPrivilegeToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.editPrivilegeToolStripMenuItem.Text = "Edit Privilege";
@@ -295,7 +295,7 @@
             // 
             // grantPrivilegeButton
             // 
-            this.grantPrivilegeButton.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.GrantPrivilege;
+            this.grantPrivilegeButton.Image = global::CymaticLabs.InfluxDB.Studio.Resources.GrantPrivilege;
             this.grantPrivilegeButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.grantPrivilegeButton.Name = "grantPrivilegeButton";
             this.grantPrivilegeButton.Size = new System.Drawing.Size(104, 22);
@@ -304,7 +304,7 @@
             // 
             // editPrivilegeButton
             // 
-            this.editPrivilegeButton.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.EditPrivilege;
+            this.editPrivilegeButton.Image = global::CymaticLabs.InfluxDB.Studio.Resources.EditPrivilege;
             this.editPrivilegeButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.editPrivilegeButton.Name = "editPrivilegeButton";
             this.editPrivilegeButton.Size = new System.Drawing.Size(95, 22);

@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ScintillaNET;
 using CymaticLabs.InfluxDB.Data;
+using InfluxDB.Studio;
 
 namespace CymaticLabs.InfluxDB.Studio.Dialogs
 {
@@ -68,14 +69,14 @@ namespace CymaticLabs.InfluxDB.Studio.Dialogs
         private void CreateContinuousQueryDialog_Load(object sender, EventArgs e)
         {
             // Setup help/info tool tips
-            destinationToolTip.SetToolTip(destinationInfo, Properties.Resources.CQ_Destination_Info);
-            sourceToolTip.SetToolTip(sourceInfo, Properties.Resources.CQ_Source_Info);
-            intervalToolTip.SetToolTip(intervalInfo, Properties.Resources.CQ_Interval_Info);
-            fillTypeToolTip.SetToolTip(fillTypeInfo, Properties.Resources.CQ_FillType_Info);
-            tagsToolTip.SetToolTip(tagsInfo, Properties.Resources.CQ_Tags_Info);
-            resampleToolTip.SetToolTip(resampleInfo, Properties.Resources.CQ_Resample_Info);
-            resampleEveryToolTip.SetToolTip(resampleEveryInfo, Properties.Resources.CQ_ResampleEvery_Info);
-            resampleForToolTip.SetToolTip(resampleForInfo, Properties.Resources.CQ_ResampleFor_Info);
+            destinationToolTip.SetToolTip(destinationInfo, Resources.CQ_Destination_Info);
+            sourceToolTip.SetToolTip(sourceInfo, Resources.CQ_Source_Info);
+            intervalToolTip.SetToolTip(intervalInfo, Resources.CQ_Interval_Info);
+            fillTypeToolTip.SetToolTip(fillTypeInfo, Resources.CQ_FillType_Info);
+            tagsToolTip.SetToolTip(tagsInfo, Resources.CQ_Tags_Info);
+            resampleToolTip.SetToolTip(resampleInfo, Resources.CQ_Resample_Info);
+            resampleEveryToolTip.SetToolTip(resampleEveryInfo, Resources.CQ_ResampleEvery_Info);
+            resampleForToolTip.SetToolTip(resampleForInfo, Resources.CQ_ResampleFor_Info);
         }
 
         // Handle add new subquery button

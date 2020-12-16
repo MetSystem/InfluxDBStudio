@@ -76,7 +76,7 @@
             // 
             // killQueryToolStripMenuItem
             // 
-            this.killQueryToolStripMenuItem.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.KillQuery;
+            this.killQueryToolStripMenuItem.Image = global::CymaticLabs.InfluxDB.Studio.Resources.KillQuery;
             this.killQueryToolStripMenuItem.Name = "killQueryToolStripMenuItem";
             this.killQueryToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.killQueryToolStripMenuItem.Text = "Kill Query";
@@ -105,7 +105,7 @@
             // killQueryButton
             // 
             this.killQueryButton.Enabled = false;
-            this.killQueryButton.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.KillQuery;
+            this.killQueryButton.Image = global::CymaticLabs.InfluxDB.Studio.Resources.KillQuery;
             this.killQueryButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.killQueryButton.Name = "killQueryButton";
             this.killQueryButton.Size = new System.Drawing.Size(78, 22);

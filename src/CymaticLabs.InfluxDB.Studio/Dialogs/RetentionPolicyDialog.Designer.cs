@@ -153,7 +153,7 @@
             // 
             // durationInfo
             // 
-            this.durationInfo.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.Info;
+            this.durationInfo.Image = global::CymaticLabs.InfluxDB.Studio.Resources.Info;
             this.durationInfo.Location = new System.Drawing.Point(192, 45);
             this.durationInfo.Name = "durationInfo";
             this.durationInfo.Size = new System.Drawing.Size(16, 16);

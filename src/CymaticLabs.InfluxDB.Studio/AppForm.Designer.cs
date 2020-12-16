@@ -68,8 +68,8 @@
             this.showQueriesButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.refreshButton = new System.Windows.Forms.ToolStripButton();
-            this.newQueryButton = new System.Windows.Forms.ToolStripButton();
             this.runQueryButton = new System.Windows.Forms.ToolStripButton();
+            this.newQueryButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.createDatabaseButton = new System.Windows.Forms.ToolStripButton();
             this.continuousQueryButton = new System.Windows.Forms.ToolStripButton();
@@ -131,6 +131,7 @@
             // 
             // menuStrip
             // 
+            this.menuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.connectionsToolStripMenuItem,
@@ -139,7 +140,8 @@
             this.helpToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(784, 24);
+            this.menuStrip.Padding = new System.Windows.Forms.Padding(9, 3, 0, 3);
+            this.menuStrip.Size = new System.Drawing.Size(1176, 30);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "menuStrip";
             // 
@@ -150,7 +152,7 @@
             this.exportToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(48, 24);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // importToolStripMenuItem
@@ -158,13 +160,13 @@
             this.importToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.importAppSettingsMenuItem});
             this.importToolStripMenuItem.Name = "importToolStripMenuItem";
-            this.importToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
+            this.importToolStripMenuItem.Size = new System.Drawing.Size(142, 26);
             this.importToolStripMenuItem.Text = "Import";
             // 
             // importAppSettingsMenuItem
             // 
             this.importAppSettingsMenuItem.Name = "importAppSettingsMenuItem";
-            this.importAppSettingsMenuItem.Size = new System.Drawing.Size(116, 22);
+            this.importAppSettingsMenuItem.Size = new System.Drawing.Size(152, 26);
             this.importAppSettingsMenuItem.Text = "Settings";
             this.importAppSettingsMenuItem.Click += new System.EventHandler(this.importAppSettingsMenuItem_Click);
             // 
@@ -173,20 +175,20 @@
             this.exportToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.exportAppSettingsMenuItem});
             this.exportToolStripMenuItem.Name = "exportToolStripMenuItem";
-            this.exportToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
+            this.exportToolStripMenuItem.Size = new System.Drawing.Size(142, 26);
             this.exportToolStripMenuItem.Text = "Export";
             // 
             // exportAppSettingsMenuItem
             // 
             this.exportAppSettingsMenuItem.Name = "exportAppSettingsMenuItem";
-            this.exportAppSettingsMenuItem.Size = new System.Drawing.Size(116, 22);
+            this.exportAppSettingsMenuItem.Size = new System.Drawing.Size(152, 26);
             this.exportAppSettingsMenuItem.Text = "Settings";
             this.exportAppSettingsMenuItem.Click += new System.EventHandler(this.exportAppSettingsMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(142, 26);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -196,22 +198,21 @@
             this.refreshToolStripMenuItem,
             this.manageToolStripMenuItem});
             this.connectionsToolStripMenuItem.Name = "connectionsToolStripMenuItem";
-            this.connectionsToolStripMenuItem.Size = new System.Drawing.Size(86, 20);
+            this.connectionsToolStripMenuItem.Size = new System.Drawing.Size(114, 24);
             this.connectionsToolStripMenuItem.Text = "Connections";
             // 
             // refreshToolStripMenuItem
             // 
-            this.refreshToolStripMenuItem.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.Refresh;
             this.refreshToolStripMenuItem.Name = "refreshToolStripMenuItem";
             this.refreshToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F5;
-            this.refreshToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.refreshToolStripMenuItem.Size = new System.Drawing.Size(173, 26);
             this.refreshToolStripMenuItem.Text = "Refresh";
             // 
             // manageToolStripMenuItem
             // 
             this.manageToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("manageToolStripMenuItem.Image")));
             this.manageToolStripMenuItem.Name = "manageToolStripMenuItem";
-            this.manageToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.manageToolStripMenuItem.Size = new System.Drawing.Size(173, 26);
             this.manageToolStripMenuItem.Text = "Manage";
             this.manageToolStripMenuItem.Click += new System.EventHandler(this.manageToolStripMenuItem_Click);
             // 
@@ -222,14 +223,13 @@
             this.runQueryToolStripMenuItem,
             this.showQueriesToolStripMenuItem});
             this.queryToolStripMenuItem.Name = "queryToolStripMenuItem";
-            this.queryToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
+            this.queryToolStripMenuItem.Size = new System.Drawing.Size(67, 24);
             this.queryToolStripMenuItem.Text = "Query";
             // 
             // newQueryToolStripMenuItem2
             // 
-            this.newQueryToolStripMenuItem2.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.NewQuery;
             this.newQueryToolStripMenuItem2.Name = "newQueryToolStripMenuItem2";
-            this.newQueryToolStripMenuItem2.Size = new System.Drawing.Size(146, 22);
+            this.newQueryToolStripMenuItem2.Size = new System.Drawing.Size(192, 26);
             this.newQueryToolStripMenuItem2.Text = "New Query";
             this.newQueryToolStripMenuItem2.Click += new System.EventHandler(this.newQueryToolStripMenuItem2_Click);
             // 
@@ -238,15 +238,14 @@
             this.runQueryToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("runQueryToolStripMenuItem.Image")));
             this.runQueryToolStripMenuItem.Name = "runQueryToolStripMenuItem";
             this.runQueryToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.R)));
-            this.runQueryToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.runQueryToolStripMenuItem.Size = new System.Drawing.Size(192, 26);
             this.runQueryToolStripMenuItem.Text = "Run";
             this.runQueryToolStripMenuItem.Click += new System.EventHandler(this.runQueryToolStripMenuItem_Click);
             // 
             // showQueriesToolStripMenuItem
             // 
-            this.showQueriesToolStripMenuItem.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.ShowQueries;
             this.showQueriesToolStripMenuItem.Name = "showQueriesToolStripMenuItem";
-            this.showQueriesToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.showQueriesToolStripMenuItem.Size = new System.Drawing.Size(192, 26);
             this.showQueriesToolStripMenuItem.Text = "Show Queries";
             this.showQueriesToolStripMenuItem.Click += new System.EventHandler(this.showQueriesToolStripMenuItem_Click);
             // 
@@ -257,16 +256,15 @@
             this.dateFormatToolStripMenuItem,
             this.allowUntrustedSSLToolStripMenuItem});
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
             this.settingsToolStripMenuItem.Text = "Settings";
             // 
             // timeFormatToolStripMenuItem
             // 
             this.timeFormatToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.timeFormatComboBox});
-            this.timeFormatToolStripMenuItem.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.Time;
             this.timeFormatToolStripMenuItem.Name = "timeFormatToolStripMenuItem";
-            this.timeFormatToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.timeFormatToolStripMenuItem.Size = new System.Drawing.Size(240, 26);
             this.timeFormatToolStripMenuItem.Text = "Time Format";
             // 
             // timeFormatComboBox
@@ -277,16 +275,15 @@
             "2:30:45 PM  12 Hour",
             "     14:30:45  24 Hour"});
             this.timeFormatComboBox.Name = "timeFormatComboBox";
-            this.timeFormatComboBox.Size = new System.Drawing.Size(136, 23);
+            this.timeFormatComboBox.Size = new System.Drawing.Size(136, 28);
             this.timeFormatComboBox.SelectedIndexChanged += new System.EventHandler(this.timeFormatComboBox_SelectedIndexChanged);
             // 
             // dateFormatToolStripMenuItem
             // 
             this.dateFormatToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.dateFormatComboBox});
-            this.dateFormatToolStripMenuItem.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.Date;
             this.dateFormatToolStripMenuItem.Name = "dateFormatToolStripMenuItem";
-            this.dateFormatToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.dateFormatToolStripMenuItem.Size = new System.Drawing.Size(240, 26);
             this.dateFormatToolStripMenuItem.Text = "Date Format";
             // 
             // dateFormatComboBox
@@ -297,14 +294,14 @@
             "12/31/2016  mm/dd/yyyy",
             "31/12/2016  dd/mm/yyyy "});
             this.dateFormatComboBox.Name = "dateFormatComboBox";
-            this.dateFormatComboBox.Size = new System.Drawing.Size(160, 23);
+            this.dateFormatComboBox.Size = new System.Drawing.Size(160, 28);
             this.dateFormatComboBox.SelectedIndexChanged += new System.EventHandler(this.dateFormatComboBox_SelectedIndexChanged);
             // 
             // allowUntrustedSSLToolStripMenuItem
             // 
             this.allowUntrustedSSLToolStripMenuItem.CheckOnClick = true;
             this.allowUntrustedSSLToolStripMenuItem.Name = "allowUntrustedSSLToolStripMenuItem";
-            this.allowUntrustedSSLToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.allowUntrustedSSLToolStripMenuItem.Size = new System.Drawing.Size(240, 26);
             this.allowUntrustedSSLToolStripMenuItem.Text = "Allow Untrusted SSL";
             this.allowUntrustedSSLToolStripMenuItem.CheckedChanged += new System.EventHandler(this.allowUntrustedSSLToolStripMenuItem_CheckedChanged);
             // 
@@ -313,18 +310,19 @@
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(58, 24);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(138, 26);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // imageList
             // 
+            this.imageList.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
             this.imageList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList.ImageStream")));
             this.imageList.TransparentColor = System.Drawing.Color.Transparent;
             this.imageList.Images.SetKeyName(0, "Loading");
@@ -334,6 +332,7 @@
             // 
             // toolStrip
             // 
+            this.toolStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.manageConnectionsButton,
             this.disconnectButton,
@@ -344,8 +343,8 @@
             this.showQueriesButton,
             this.toolStripSeparator1,
             this.refreshButton,
-            this.newQueryButton,
             this.runQueryButton,
+            this.newQueryButton,
             this.toolStripSeparator2,
             this.createDatabaseButton,
             this.continuousQueryButton,
@@ -358,19 +357,20 @@
             this.showSeriesButton,
             this.dropSeriesButton,
             this.dropMeasurementButton});
-            this.toolStrip.Location = new System.Drawing.Point(0, 24);
+            this.toolStrip.Location = new System.Drawing.Point(0, 30);
             this.toolStrip.Name = "toolStrip";
-            this.toolStrip.Size = new System.Drawing.Size(784, 25);
+            this.toolStrip.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
+            this.toolStrip.Size = new System.Drawing.Size(1176, 27);
             this.toolStrip.TabIndex = 2;
             this.toolStrip.Text = "toolStrip1";
             // 
             // manageConnectionsButton
             // 
             this.manageConnectionsButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.manageConnectionsButton.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.EditConnection;
+            this.manageConnectionsButton.Image = ((System.Drawing.Image)(resources.GetObject("manageConnectionsButton.Image")));
             this.manageConnectionsButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.manageConnectionsButton.Name = "manageConnectionsButton";
-            this.manageConnectionsButton.Size = new System.Drawing.Size(23, 22);
+            this.manageConnectionsButton.Size = new System.Drawing.Size(29, 24);
             this.manageConnectionsButton.Text = "manageConnectionsButton";
             this.manageConnectionsButton.ToolTipText = "Manage Connections";
             this.manageConnectionsButton.Click += new System.EventHandler(this.manageConnectionsButton_Click);
@@ -378,10 +378,10 @@
             // disconnectButton
             // 
             this.disconnectButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.disconnectButton.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.Disconnect;
+            this.disconnectButton.Image = ((System.Drawing.Image)(resources.GetObject("disconnectButton.Image")));
             this.disconnectButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.disconnectButton.Name = "disconnectButton";
-            this.disconnectButton.Size = new System.Drawing.Size(23, 22);
+            this.disconnectButton.Size = new System.Drawing.Size(29, 24);
             this.disconnectButton.Text = "disconnectButton";
             this.disconnectButton.ToolTipText = "Disconnect";
             this.disconnectButton.Click += new System.EventHandler(this.disconnectButton_Click);
@@ -389,30 +389,30 @@
             // showPoliciesButton
             // 
             this.showPoliciesButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.showPoliciesButton.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.RetentionPolicy;
+            this.showPoliciesButton.Image = ((System.Drawing.Image)(resources.GetObject("showPoliciesButton.Image")));
             this.showPoliciesButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.showPoliciesButton.Name = "showPoliciesButton";
-            this.showPoliciesButton.Size = new System.Drawing.Size(23, 22);
+            this.showPoliciesButton.Size = new System.Drawing.Size(29, 24);
             this.showPoliciesButton.Text = "Show Retention Policies";
             this.showPoliciesButton.Click += new System.EventHandler(this.showPoliciesButton_Click);
             // 
             // showUsersButton
             // 
             this.showUsersButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.showUsersButton.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.Users;
+            this.showUsersButton.Image = ((System.Drawing.Image)(resources.GetObject("showUsersButton.Image")));
             this.showUsersButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.showUsersButton.Name = "showUsersButton";
-            this.showUsersButton.Size = new System.Drawing.Size(23, 22);
+            this.showUsersButton.Size = new System.Drawing.Size(29, 24);
             this.showUsersButton.Text = "Show Users";
             this.showUsersButton.Click += new System.EventHandler(this.showUsersButton_Click);
             // 
             // showStatsButton
             // 
             this.showStatsButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.showStatsButton.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.Stats;
+            this.showStatsButton.Image = ((System.Drawing.Image)(resources.GetObject("showStatsButton.Image")));
             this.showStatsButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.showStatsButton.Name = "showStatsButton";
-            this.showStatsButton.Size = new System.Drawing.Size(23, 22);
+            this.showStatsButton.Size = new System.Drawing.Size(29, 24);
             this.showStatsButton.Text = "toolStripButton1";
             this.showStatsButton.ToolTipText = "Show Statistics";
             this.showStatsButton.Click += new System.EventHandler(this.showStatsButton_Click);
@@ -420,10 +420,10 @@
             // showDiagnosticsButton
             // 
             this.showDiagnosticsButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.showDiagnosticsButton.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.Diagnostics;
+            this.showDiagnosticsButton.Image = ((System.Drawing.Image)(resources.GetObject("showDiagnosticsButton.Image")));
             this.showDiagnosticsButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.showDiagnosticsButton.Name = "showDiagnosticsButton";
-            this.showDiagnosticsButton.Size = new System.Drawing.Size(23, 22);
+            this.showDiagnosticsButton.Size = new System.Drawing.Size(29, 24);
             this.showDiagnosticsButton.Text = "showDiagnosticsButton";
             this.showDiagnosticsButton.ToolTipText = "Show Diagnostics";
             this.showDiagnosticsButton.Click += new System.EventHandler(this.showDiagnosticsButton_Click);
@@ -431,63 +431,63 @@
             // showQueriesButton
             // 
             this.showQueriesButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.showQueriesButton.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.ShowQueries;
+            this.showQueriesButton.Image = ((System.Drawing.Image)(resources.GetObject("showQueriesButton.Image")));
             this.showQueriesButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.showQueriesButton.Name = "showQueriesButton";
-            this.showQueriesButton.Size = new System.Drawing.Size(23, 22);
+            this.showQueriesButton.Size = new System.Drawing.Size(29, 24);
             this.showQueriesButton.Text = "Show Queries";
             this.showQueriesButton.Click += new System.EventHandler(this.showQueriesButton_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
             // refreshButton
             // 
             this.refreshButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.refreshButton.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.Refresh;
+            this.refreshButton.Image = ((System.Drawing.Image)(resources.GetObject("refreshButton.Image")));
             this.refreshButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.refreshButton.Name = "refreshButton";
-            this.refreshButton.Size = new System.Drawing.Size(23, 22);
+            this.refreshButton.Size = new System.Drawing.Size(29, 24);
             this.refreshButton.Text = "Refresh";
             this.refreshButton.ToolTipText = "Refresh";
             this.refreshButton.Click += new System.EventHandler(this.refreshButton_Click);
             // 
-            // newQueryButton
-            // 
-            this.newQueryButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.newQueryButton.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.NewQuery;
-            this.newQueryButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.newQueryButton.Name = "newQueryButton";
-            this.newQueryButton.Size = new System.Drawing.Size(23, 22);
-            this.newQueryButton.Text = "newQueryButton";
-            this.newQueryButton.ToolTipText = "New Query";
-            this.newQueryButton.Click += new System.EventHandler(this.newQueryButton_Click);
-            // 
             // runQueryButton
             // 
             this.runQueryButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.runQueryButton.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.RunQuery;
+            this.runQueryButton.Image = ((System.Drawing.Image)(resources.GetObject("runQueryButton.Image")));
             this.runQueryButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.runQueryButton.Name = "runQueryButton";
-            this.runQueryButton.Size = new System.Drawing.Size(23, 22);
+            this.runQueryButton.Size = new System.Drawing.Size(29, 24);
             this.runQueryButton.Text = "runQueryButton";
             this.runQueryButton.ToolTipText = "Run Query";
             this.runQueryButton.Click += new System.EventHandler(this.runQueryButton_Click);
             // 
+            // newQueryButton
+            // 
+            this.newQueryButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.newQueryButton.Image = ((System.Drawing.Image)(resources.GetObject("newQueryButton.Image")));
+            this.newQueryButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.newQueryButton.Name = "newQueryButton";
+            this.newQueryButton.Size = new System.Drawing.Size(29, 24);
+            this.newQueryButton.Text = "newQueryButton";
+            this.newQueryButton.ToolTipText = "New Query";
+            this.newQueryButton.Click += new System.EventHandler(this.newQueryButton_Click);
+            // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
             // createDatabaseButton
             // 
             this.createDatabaseButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.createDatabaseButton.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.CreateDatabase;
+            this.createDatabaseButton.Image = ((System.Drawing.Image)(resources.GetObject("createDatabaseButton.Image")));
             this.createDatabaseButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.createDatabaseButton.Name = "createDatabaseButton";
-            this.createDatabaseButton.Size = new System.Drawing.Size(23, 22);
+            this.createDatabaseButton.Size = new System.Drawing.Size(29, 24);
             this.createDatabaseButton.Text = "createDatabaseButton";
             this.createDatabaseButton.ToolTipText = "Create Database";
             this.createDatabaseButton.Click += new System.EventHandler(this.createDatabaseButton_Click);
@@ -495,30 +495,30 @@
             // continuousQueryButton
             // 
             this.continuousQueryButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.continuousQueryButton.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.ContinuousQuery;
+            this.continuousQueryButton.Image = ((System.Drawing.Image)(resources.GetObject("continuousQueryButton.Image")));
             this.continuousQueryButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.continuousQueryButton.Name = "continuousQueryButton";
-            this.continuousQueryButton.Size = new System.Drawing.Size(23, 22);
+            this.continuousQueryButton.Size = new System.Drawing.Size(29, 24);
             this.continuousQueryButton.Text = "Show Continuous Queries";
             this.continuousQueryButton.Click += new System.EventHandler(this.continuousQueryButton_Click);
             // 
             // backFillButton
             // 
             this.backFillButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.backFillButton.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.BackFill;
+            this.backFillButton.Image = ((System.Drawing.Image)(resources.GetObject("backFillButton.Image")));
             this.backFillButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.backFillButton.Name = "backFillButton";
-            this.backFillButton.Size = new System.Drawing.Size(23, 22);
+            this.backFillButton.Size = new System.Drawing.Size(29, 24);
             this.backFillButton.Text = "Run Backfill";
             this.backFillButton.Click += new System.EventHandler(this.backFillButton_Click);
             // 
             // dropDatabaseButton
             // 
             this.dropDatabaseButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.dropDatabaseButton.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.DropDatabase;
+            this.dropDatabaseButton.Image = ((System.Drawing.Image)(resources.GetObject("dropDatabaseButton.Image")));
             this.dropDatabaseButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.dropDatabaseButton.Name = "dropDatabaseButton";
-            this.dropDatabaseButton.Size = new System.Drawing.Size(23, 22);
+            this.dropDatabaseButton.Size = new System.Drawing.Size(29, 24);
             this.dropDatabaseButton.Text = "dropDatabaseButton";
             this.dropDatabaseButton.ToolTipText = "Drop Database";
             this.dropDatabaseButton.Click += new System.EventHandler(this.dropDatabaseButton_Click);
@@ -526,15 +526,15 @@
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 27);
             // 
             // tagKeysButton
             // 
             this.tagKeysButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tagKeysButton.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.TagKeys;
+            this.tagKeysButton.Image = ((System.Drawing.Image)(resources.GetObject("tagKeysButton.Image")));
             this.tagKeysButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tagKeysButton.Name = "tagKeysButton";
-            this.tagKeysButton.Size = new System.Drawing.Size(23, 22);
+            this.tagKeysButton.Size = new System.Drawing.Size(29, 24);
             this.tagKeysButton.Text = "A";
             this.tagKeysButton.ToolTipText = "Show Tag Keys";
             this.tagKeysButton.Click += new System.EventHandler(this.tagKeysButton_Click);
@@ -542,10 +542,10 @@
             // tagValuesButton
             // 
             this.tagValuesButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tagValuesButton.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.TagValues;
+            this.tagValuesButton.Image = ((System.Drawing.Image)(resources.GetObject("tagValuesButton.Image")));
             this.tagValuesButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tagValuesButton.Name = "tagValuesButton";
-            this.tagValuesButton.Size = new System.Drawing.Size(23, 22);
+            this.tagValuesButton.Size = new System.Drawing.Size(29, 24);
             this.tagValuesButton.Text = "Tag Values";
             this.tagValuesButton.ToolTipText = "Show Tag Values";
             this.tagValuesButton.Click += new System.EventHandler(this.tagValuesButton_Click);
@@ -553,10 +553,10 @@
             // fieldKeysButton
             // 
             this.fieldKeysButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.fieldKeysButton.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.FieldKeys;
+            this.fieldKeysButton.Image = ((System.Drawing.Image)(resources.GetObject("fieldKeysButton.Image")));
             this.fieldKeysButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.fieldKeysButton.Name = "fieldKeysButton";
-            this.fieldKeysButton.Size = new System.Drawing.Size(23, 22);
+            this.fieldKeysButton.Size = new System.Drawing.Size(29, 24);
             this.fieldKeysButton.Text = "Field Keys";
             this.fieldKeysButton.ToolTipText = "Show Field Keys";
             this.fieldKeysButton.Click += new System.EventHandler(this.fieldKeysButton_Click);
@@ -564,10 +564,10 @@
             // showSeriesButton
             // 
             this.showSeriesButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.showSeriesButton.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.Series;
+            this.showSeriesButton.Image = ((System.Drawing.Image)(resources.GetObject("showSeriesButton.Image")));
             this.showSeriesButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.showSeriesButton.Name = "showSeriesButton";
-            this.showSeriesButton.Size = new System.Drawing.Size(23, 22);
+            this.showSeriesButton.Size = new System.Drawing.Size(29, 24);
             this.showSeriesButton.Text = "showSeriesButton";
             this.showSeriesButton.ToolTipText = "Show Show Series";
             this.showSeriesButton.Click += new System.EventHandler(this.showSeriesButton_Click);
@@ -575,10 +575,10 @@
             // dropSeriesButton
             // 
             this.dropSeriesButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.dropSeriesButton.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.DropSeries;
+            this.dropSeriesButton.Image = ((System.Drawing.Image)(resources.GetObject("dropSeriesButton.Image")));
             this.dropSeriesButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.dropSeriesButton.Name = "dropSeriesButton";
-            this.dropSeriesButton.Size = new System.Drawing.Size(23, 22);
+            this.dropSeriesButton.Size = new System.Drawing.Size(29, 24);
             this.dropSeriesButton.Text = "dropSeriesButton";
             this.dropSeriesButton.ToolTipText = "Drop Series";
             this.dropSeriesButton.Click += new System.EventHandler(this.dropSeriesButton_Click);
@@ -586,34 +586,37 @@
             // dropMeasurementButton
             // 
             this.dropMeasurementButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.dropMeasurementButton.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.DropMeasurement;
+            this.dropMeasurementButton.Image = ((System.Drawing.Image)(resources.GetObject("dropMeasurementButton.Image")));
             this.dropMeasurementButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.dropMeasurementButton.Name = "dropMeasurementButton";
-            this.dropMeasurementButton.Size = new System.Drawing.Size(23, 22);
+            this.dropMeasurementButton.Size = new System.Drawing.Size(29, 24);
             this.dropMeasurementButton.Text = "dropMeasurementButton";
             this.dropMeasurementButton.ToolTipText = "Drop Measurement";
             this.dropMeasurementButton.Click += new System.EventHandler(this.dropMeasurementButton_Click);
             // 
             // statusStrip
             // 
+            this.statusStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.statusLabel});
-            this.statusStrip.Location = new System.Drawing.Point(0, 540);
+            this.statusStrip.Location = new System.Drawing.Point(0, 839);
             this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Size = new System.Drawing.Size(784, 22);
+            this.statusStrip.Padding = new System.Windows.Forms.Padding(2, 0, 21, 0);
+            this.statusStrip.Size = new System.Drawing.Size(1176, 26);
             this.statusStrip.TabIndex = 3;
             this.statusStrip.Text = "statusStrip1";
             // 
             // statusLabel
             // 
             this.statusLabel.Name = "statusLabel";
-            this.statusLabel.Size = new System.Drawing.Size(16, 17);
+            this.statusLabel.Size = new System.Drawing.Size(21, 20);
             this.statusLabel.Text = "...";
             // 
             // splitContainer
             // 
             this.splitContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer.Location = new System.Drawing.Point(0, 49);
+            this.splitContainer.Location = new System.Drawing.Point(0, 57);
+            this.splitContainer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.splitContainer.Name = "splitContainer";
             // 
             // splitContainer.Panel1
@@ -623,8 +626,9 @@
             // splitContainer.Panel2
             // 
             this.splitContainer.Panel2.Controls.Add(this.tabControl);
-            this.splitContainer.Size = new System.Drawing.Size(784, 491);
-            this.splitContainer.SplitterDistance = 168;
+            this.splitContainer.Size = new System.Drawing.Size(1176, 782);
+            this.splitContainer.SplitterDistance = 250;
+            this.splitContainer.SplitterWidth = 6;
             this.splitContainer.TabIndex = 4;
             // 
             // connectionsTreeView
@@ -635,6 +639,7 @@
             this.connectionsTreeView.ImageIndex = 0;
             this.connectionsTreeView.ImageList = this.imageList;
             this.connectionsTreeView.Location = new System.Drawing.Point(0, 0);
+            this.connectionsTreeView.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.connectionsTreeView.Name = "connectionsTreeView";
             treeNode1.ImageIndex = 3;
             treeNode1.Name = "Node2";
@@ -651,7 +656,7 @@
             this.connectionsTreeView.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
             treeNode3});
             this.connectionsTreeView.SelectedImageIndex = 0;
-            this.connectionsTreeView.Size = new System.Drawing.Size(168, 491);
+            this.connectionsTreeView.Size = new System.Drawing.Size(250, 782);
             this.connectionsTreeView.TabIndex = 1;
             this.connectionsTreeView.AfterExpand += new System.Windows.Forms.TreeViewEventHandler(this.connectionsTreeView_AfterExpand);
             this.connectionsTreeView.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.connectionsTreeView_AfterSelect);
@@ -663,10 +668,11 @@
             this.tabControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
             this.tabControl.Location = new System.Drawing.Point(0, 0);
+            this.tabControl.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
             this.tabControl.ShowTabCloseArea = true;
-            this.tabControl.Size = new System.Drawing.Size(612, 491);
+            this.tabControl.Size = new System.Drawing.Size(920, 782);
             this.tabControl.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tabControl.TabCloseSpace = 8;
             this.tabControl.TabCloseWidth = 16;
@@ -680,6 +686,7 @@
             // 
             // connectionsContextMenu
             // 
+            this.connectionsContextMenu.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.connectionsContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.connectionRefreshToolStripMenuItem,
             this.createDatabaseToolStripMenuItem,
@@ -690,74 +697,67 @@
             this.diagnosticsToolStripMenuItem,
             this.disconnectToolStripMenuItem});
             this.connectionsContextMenu.Name = "connectionsContextMenu";
-            this.connectionsContextMenu.Size = new System.Drawing.Size(201, 180);
+            this.connectionsContextMenu.Size = new System.Drawing.Size(254, 196);
             // 
             // connectionRefreshToolStripMenuItem
             // 
-            this.connectionRefreshToolStripMenuItem.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.Refresh;
             this.connectionRefreshToolStripMenuItem.Name = "connectionRefreshToolStripMenuItem";
-            this.connectionRefreshToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
+            this.connectionRefreshToolStripMenuItem.Size = new System.Drawing.Size(253, 24);
             this.connectionRefreshToolStripMenuItem.Text = "Refresh";
             this.connectionRefreshToolStripMenuItem.Click += new System.EventHandler(this.connectionRefreshToolStripMenuItem_Click);
             // 
             // createDatabaseToolStripMenuItem
             // 
-            this.createDatabaseToolStripMenuItem.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.CreateDatabase;
             this.createDatabaseToolStripMenuItem.Name = "createDatabaseToolStripMenuItem";
-            this.createDatabaseToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
+            this.createDatabaseToolStripMenuItem.Size = new System.Drawing.Size(253, 24);
             this.createDatabaseToolStripMenuItem.Text = "Create Database";
             this.createDatabaseToolStripMenuItem.Click += new System.EventHandler(this.createDatabaseToolStripMenuItem_Click);
             // 
             // showPoliciesToolStripMenuItem
             // 
-            this.showPoliciesToolStripMenuItem.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.RetentionPolicy;
             this.showPoliciesToolStripMenuItem.Name = "showPoliciesToolStripMenuItem";
-            this.showPoliciesToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
+            this.showPoliciesToolStripMenuItem.Size = new System.Drawing.Size(253, 24);
             this.showPoliciesToolStripMenuItem.Text = "Show Retention Policies";
             this.showPoliciesToolStripMenuItem.Click += new System.EventHandler(this.showRetentionPoliciesToolStripMenuItem_Click);
             // 
             // showUsersToolStripMenuItem
             // 
-            this.showUsersToolStripMenuItem.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.Users;
             this.showUsersToolStripMenuItem.Name = "showUsersToolStripMenuItem";
-            this.showUsersToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
+            this.showUsersToolStripMenuItem.Size = new System.Drawing.Size(253, 24);
             this.showUsersToolStripMenuItem.Text = "Show Users";
             this.showUsersToolStripMenuItem.Click += new System.EventHandler(this.showUsersToolStripMenuItem_Click);
             // 
             // showQueriesContextMenuItem
             // 
-            this.showQueriesContextMenuItem.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.ShowQueries;
             this.showQueriesContextMenuItem.Name = "showQueriesContextMenuItem";
-            this.showQueriesContextMenuItem.Size = new System.Drawing.Size(200, 22);
+            this.showQueriesContextMenuItem.Size = new System.Drawing.Size(253, 24);
             this.showQueriesContextMenuItem.Text = "Show Queries";
             this.showQueriesContextMenuItem.Click += new System.EventHandler(this.showQueriesContextMenuItem_Click);
             // 
             // showStatisticsToolStripMenuItem
             // 
-            this.showStatisticsToolStripMenuItem.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.Stats;
             this.showStatisticsToolStripMenuItem.Name = "showStatisticsToolStripMenuItem";
-            this.showStatisticsToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
+            this.showStatisticsToolStripMenuItem.Size = new System.Drawing.Size(253, 24);
             this.showStatisticsToolStripMenuItem.Text = "Show Statistics";
             this.showStatisticsToolStripMenuItem.Click += new System.EventHandler(this.showStatisticsToolStripMenuItem_Click);
             // 
             // diagnosticsToolStripMenuItem
             // 
-            this.diagnosticsToolStripMenuItem.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.Diagnostics;
             this.diagnosticsToolStripMenuItem.Name = "diagnosticsToolStripMenuItem";
-            this.diagnosticsToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
+            this.diagnosticsToolStripMenuItem.Size = new System.Drawing.Size(253, 24);
             this.diagnosticsToolStripMenuItem.Text = "Diagnostics";
             this.diagnosticsToolStripMenuItem.Click += new System.EventHandler(this.diagnosticsToolStripMenuItem_Click);
             // 
             // disconnectToolStripMenuItem
             // 
-            this.disconnectToolStripMenuItem.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.Disconnect;
             this.disconnectToolStripMenuItem.Name = "disconnectToolStripMenuItem";
-            this.disconnectToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
+            this.disconnectToolStripMenuItem.Size = new System.Drawing.Size(253, 24);
             this.disconnectToolStripMenuItem.Text = "Disconnect";
             this.disconnectToolStripMenuItem.Click += new System.EventHandler(this.disconnectToolStripMenuItem_Click);
             // 
             // databaseContextMenu
             // 
+            this.databaseContextMenu.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.databaseContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.databaseRefreshToolStripMenuItem,
             this.newQueryToolStripMenuItem,
@@ -765,13 +765,12 @@
             this.backFillToolStripMenuItem,
             this.dropDatabaseToolStripMenuItem});
             this.databaseContextMenu.Name = "databaseContextMenu";
-            this.databaseContextMenu.Size = new System.Drawing.Size(205, 114);
+            this.databaseContextMenu.Size = new System.Drawing.Size(261, 134);
             // 
             // databaseRefreshToolStripMenuItem
             // 
-            this.databaseRefreshToolStripMenuItem.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.Refresh;
             this.databaseRefreshToolStripMenuItem.Name = "databaseRefreshToolStripMenuItem";
-            this.databaseRefreshToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.databaseRefreshToolStripMenuItem.Size = new System.Drawing.Size(260, 26);
             this.databaseRefreshToolStripMenuItem.Text = "Refresh";
             this.databaseRefreshToolStripMenuItem.Click += new System.EventHandler(this.databaseRefreshToolStripMenuItem_Click);
             // 
@@ -779,36 +778,34 @@
             // 
             this.newQueryToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("newQueryToolStripMenuItem.Image")));
             this.newQueryToolStripMenuItem.Name = "newQueryToolStripMenuItem";
-            this.newQueryToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.newQueryToolStripMenuItem.Size = new System.Drawing.Size(260, 26);
             this.newQueryToolStripMenuItem.Text = "New Query";
             this.newQueryToolStripMenuItem.Click += new System.EventHandler(this.newQueryMenuItem_Click);
             // 
             // continousQueriesToolStripMenuItem
             // 
-            this.continousQueriesToolStripMenuItem.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.ContinuousQuery;
             this.continousQueriesToolStripMenuItem.Name = "continousQueriesToolStripMenuItem";
-            this.continousQueriesToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.continousQueriesToolStripMenuItem.Size = new System.Drawing.Size(260, 26);
             this.continousQueriesToolStripMenuItem.Text = "Show Continous Queries";
             this.continousQueriesToolStripMenuItem.Click += new System.EventHandler(this.continousQueriesToolStripMenuItem_Click);
             // 
             // backFillToolStripMenuItem
             // 
-            this.backFillToolStripMenuItem.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.BackFill;
             this.backFillToolStripMenuItem.Name = "backFillToolStripMenuItem";
-            this.backFillToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.backFillToolStripMenuItem.Size = new System.Drawing.Size(260, 26);
             this.backFillToolStripMenuItem.Text = "Run Backfill";
             this.backFillToolStripMenuItem.Click += new System.EventHandler(this.backFillToolStripMenuItem_Click);
             // 
             // dropDatabaseToolStripMenuItem
             // 
-            this.dropDatabaseToolStripMenuItem.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.DropDatabase;
             this.dropDatabaseToolStripMenuItem.Name = "dropDatabaseToolStripMenuItem";
-            this.dropDatabaseToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.dropDatabaseToolStripMenuItem.Size = new System.Drawing.Size(260, 26);
             this.dropDatabaseToolStripMenuItem.Text = "Drop Database";
             this.dropDatabaseToolStripMenuItem.Click += new System.EventHandler(this.dropDatabaseToolStripMenuItem_Click);
             // 
             // measurementContextMenu
             // 
+            this.measurementContextMenu.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.measurementContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newQueryToolStripMenuItem1,
             this.tagKeysToolStripMenuItem,
@@ -818,61 +815,55 @@
             this.dropMeasurementToolStripMenuItem,
             this.dropSeriesToolStripMenuItem});
             this.measurementContextMenu.Name = "measurementContextMenu";
-            this.measurementContextMenu.Size = new System.Drawing.Size(177, 158);
+            this.measurementContextMenu.Size = new System.Drawing.Size(225, 186);
             // 
             // newQueryToolStripMenuItem1
             // 
             this.newQueryToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("newQueryToolStripMenuItem1.Image")));
             this.newQueryToolStripMenuItem1.Name = "newQueryToolStripMenuItem1";
-            this.newQueryToolStripMenuItem1.Size = new System.Drawing.Size(176, 22);
+            this.newQueryToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
             this.newQueryToolStripMenuItem1.Text = "New Query";
             this.newQueryToolStripMenuItem1.Click += new System.EventHandler(this.newQueryMenuItem_Click);
             // 
             // tagKeysToolStripMenuItem
             // 
-            this.tagKeysToolStripMenuItem.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.TagKeys;
             this.tagKeysToolStripMenuItem.Name = "tagKeysToolStripMenuItem";
-            this.tagKeysToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.tagKeysToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.tagKeysToolStripMenuItem.Text = "Show Tag Keys";
             this.tagKeysToolStripMenuItem.Click += new System.EventHandler(this.tagKeysToolStripMenuItem_Click);
             // 
             // tagValuesToolStripMenuItem
             // 
-            this.tagValuesToolStripMenuItem.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.TagValues;
             this.tagValuesToolStripMenuItem.Name = "tagValuesToolStripMenuItem";
-            this.tagValuesToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.tagValuesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.tagValuesToolStripMenuItem.Text = "Show Tag Values";
             this.tagValuesToolStripMenuItem.Click += new System.EventHandler(this.tagValuesToolStripMenuItem_Click);
             // 
             // fieldKeysToolStripMenuItem
             // 
-            this.fieldKeysToolStripMenuItem.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.FieldKeys;
             this.fieldKeysToolStripMenuItem.Name = "fieldKeysToolStripMenuItem";
-            this.fieldKeysToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.fieldKeysToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.fieldKeysToolStripMenuItem.Text = "Show Field Keys";
             this.fieldKeysToolStripMenuItem.Click += new System.EventHandler(this.fieldKeysToolStripMenuItem_Click);
             // 
             // showSeriesToolStripMenuItem
             // 
-            this.showSeriesToolStripMenuItem.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.Series;
             this.showSeriesToolStripMenuItem.Name = "showSeriesToolStripMenuItem";
-            this.showSeriesToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.showSeriesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.showSeriesToolStripMenuItem.Text = "Show Series";
             this.showSeriesToolStripMenuItem.Click += new System.EventHandler(this.showSeriesToolStripMenuItem_Click);
             // 
             // dropMeasurementToolStripMenuItem
             // 
-            this.dropMeasurementToolStripMenuItem.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.DropMeasurement;
             this.dropMeasurementToolStripMenuItem.Name = "dropMeasurementToolStripMenuItem";
-            this.dropMeasurementToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.dropMeasurementToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.dropMeasurementToolStripMenuItem.Text = "Drop Measurement";
             this.dropMeasurementToolStripMenuItem.Click += new System.EventHandler(this.dropMeasurementToolStripMenuItem_Click);
             // 
             // dropSeriesToolStripMenuItem
             // 
-            this.dropSeriesToolStripMenuItem.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.DropSeries;
             this.dropSeriesToolStripMenuItem.Name = "dropSeriesToolStripMenuItem";
-            this.dropSeriesToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.dropSeriesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.dropSeriesToolStripMenuItem.Text = "Drop Series";
             this.dropSeriesToolStripMenuItem.Click += new System.EventHandler(this.dropSeriesToolStripMenuItem_Click);
             // 
@@ -888,44 +879,46 @@
             // 
             // tabContextMenuStrip
             // 
+            this.tabContextMenuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.tabContextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.closeTabMenuItem,
             this.closeAllButThisMenuItem,
             this.closeAllMenuItem});
             this.tabContextMenuStrip.Name = "tabContextMenuStrip";
-            this.tabContextMenuStrip.Size = new System.Drawing.Size(167, 70);
+            this.tabContextMenuStrip.Size = new System.Drawing.Size(203, 76);
             // 
             // closeTabMenuItem
             // 
             this.closeTabMenuItem.Name = "closeTabMenuItem";
-            this.closeTabMenuItem.Size = new System.Drawing.Size(166, 22);
+            this.closeTabMenuItem.Size = new System.Drawing.Size(202, 24);
             this.closeTabMenuItem.Text = "Close";
             // 
             // closeAllButThisMenuItem
             // 
             this.closeAllButThisMenuItem.Name = "closeAllButThisMenuItem";
-            this.closeAllButThisMenuItem.Size = new System.Drawing.Size(166, 22);
+            this.closeAllButThisMenuItem.Size = new System.Drawing.Size(202, 24);
             this.closeAllButThisMenuItem.Text = "Close All But This";
             // 
             // closeAllMenuItem
             // 
             this.closeAllMenuItem.Name = "closeAllMenuItem";
-            this.closeAllMenuItem.Size = new System.Drawing.Size(166, 22);
+            this.closeAllMenuItem.Size = new System.Drawing.Size(202, 24);
             this.closeAllMenuItem.Text = "Close All";
             // 
             // AppForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 562);
+            this.ClientSize = new System.Drawing.Size(1176, 865);
             this.Controls.Add(this.splitContainer);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.toolStrip);
             this.Controls.Add(this.menuStrip);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "AppForm";
-            this.Text = "InfluxDB Studio";
+            this.Text = "InfluxDB Client";
             this.Load += new System.EventHandler(this.AppForm_Load);
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();

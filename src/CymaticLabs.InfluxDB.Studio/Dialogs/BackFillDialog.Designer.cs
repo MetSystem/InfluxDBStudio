@@ -144,7 +144,7 @@
             // 
             // sourceInfo
             // 
-            this.sourceInfo.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.Info;
+            this.sourceInfo.Image = global::CymaticLabs.InfluxDB.Studio.Resources.Info;
             this.sourceInfo.Location = new System.Drawing.Point(562, 64);
             this.sourceInfo.Name = "sourceInfo";
             this.sourceInfo.Size = new System.Drawing.Size(16, 16);
@@ -153,7 +153,7 @@
             // 
             // destinationInfo
             // 
-            this.destinationInfo.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.Info;
+            this.destinationInfo.Image = global::CymaticLabs.InfluxDB.Studio.Resources.Info;
             this.destinationInfo.Location = new System.Drawing.Point(270, 64);
             this.destinationInfo.Name = "destinationInfo";
             this.destinationInfo.Size = new System.Drawing.Size(16, 16);
@@ -182,7 +182,7 @@
             // 
             // filtersInfo
             // 
-            this.filtersInfo.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.Info;
+            this.filtersInfo.Image = global::CymaticLabs.InfluxDB.Studio.Resources.Info;
             this.filtersInfo.Location = new System.Drawing.Point(562, 178);
             this.filtersInfo.Name = "filtersInfo";
             this.filtersInfo.Size = new System.Drawing.Size(16, 16);
@@ -191,7 +191,7 @@
             // 
             // tagsInfo
             // 
-            this.tagsInfo.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.Info;
+            this.tagsInfo.Image = global::CymaticLabs.InfluxDB.Studio.Resources.Info;
             this.tagsInfo.Location = new System.Drawing.Point(562, 217);
             this.tagsInfo.Name = "tagsInfo";
             this.tagsInfo.Size = new System.Drawing.Size(16, 16);
@@ -200,7 +200,7 @@
             // 
             // fillTypeInfo
             // 
-            this.fillTypeInfo.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.Info;
+            this.fillTypeInfo.Image = global::CymaticLabs.InfluxDB.Studio.Resources.Info;
             this.fillTypeInfo.Location = new System.Drawing.Point(485, 101);
             this.fillTypeInfo.Name = "fillTypeInfo";
             this.fillTypeInfo.Size = new System.Drawing.Size(16, 16);
@@ -209,7 +209,7 @@
             // 
             // intervalInfo
             // 
-            this.intervalInfo.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.Info;
+            this.intervalInfo.Image = global::CymaticLabs.InfluxDB.Studio.Resources.Info;
             this.intervalInfo.Location = new System.Drawing.Point(193, 101);
             this.intervalInfo.Name = "intervalInfo";
             this.intervalInfo.Size = new System.Drawing.Size(16, 16);

@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ScintillaNET;
 using CymaticLabs.InfluxDB.Data;
+using InfluxDB.Studio;
 
 namespace CymaticLabs.InfluxDB.Studio.Dialogs
 {
@@ -69,12 +70,12 @@ namespace CymaticLabs.InfluxDB.Studio.Dialogs
         private void BackFillDialog_Load(object sender, EventArgs e)
         {
             // Setup help/info tool tips
-            destinationToolTip.SetToolTip(destinationInfo, Properties.Resources.BF_Destination_Info);
-            sourceToolTip.SetToolTip(sourceInfo, Properties.Resources.BF_Source_Info);
-            intervalToolTip.SetToolTip(intervalInfo, Properties.Resources.BF_Interval_Info);
-            fillTypeToolTip.SetToolTip(fillTypeInfo, Properties.Resources.CQ_FillType_Info);
-            filtersToolTip.SetToolTip(filtersInfo, Properties.Resources.BF_Filters_Info);
-            tagsToolTip.SetToolTip(tagsInfo, Properties.Resources.CQ_Tags_Info);
+            destinationToolTip.SetToolTip(destinationInfo, Resources.BF_Destination_Info);
+            sourceToolTip.SetToolTip(sourceInfo, Resources.BF_Source_Info);
+            intervalToolTip.SetToolTip(intervalInfo, Resources.BF_Interval_Info);
+            fillTypeToolTip.SetToolTip(fillTypeInfo, Resources.CQ_FillType_Info);
+            filtersToolTip.SetToolTip(filtersInfo, Resources.BF_Filters_Info);
+            tagsToolTip.SetToolTip(tagsInfo, Resources.CQ_Tags_Info);
         }
 
         // Form Closing

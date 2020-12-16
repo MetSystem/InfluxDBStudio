@@ -63,7 +63,7 @@
             // 
             // createConnection
             // 
-            this.createConnection.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.CreateConnection;
+            this.createConnection.Image = global::CymaticLabs.InfluxDB.Studio.Resources.CreateConnection;
             this.createConnection.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.createConnection.Name = "createConnection";
             this.createConnection.Size = new System.Drawing.Size(61, 22);
@@ -78,7 +78,7 @@
             // editConnection
             // 
             this.editConnection.Enabled = false;
-            this.editConnection.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.EditConnection;
+            this.editConnection.Image = global::CymaticLabs.InfluxDB.Studio.Resources.EditConnection;
             this.editConnection.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.editConnection.Name = "editConnection";
             this.editConnection.Size = new System.Drawing.Size(47, 22);
@@ -93,7 +93,7 @@
             // removeConnection
             // 
             this.removeConnection.Enabled = false;
-            this.removeConnection.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.Disconnect;
+            this.removeConnection.Image = global::CymaticLabs.InfluxDB.Studio.Resources.Disconnect;
             this.removeConnection.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.removeConnection.Name = "removeConnection";
             this.removeConnection.Size = new System.Drawing.Size(70, 22);

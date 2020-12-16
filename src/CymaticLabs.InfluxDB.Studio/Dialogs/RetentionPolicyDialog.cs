@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using CymaticLabs.InfluxDB.Data;
+using InfluxDB.Studio;
 
 namespace CymaticLabs.InfluxDB.Studio.Dialogs
 {
@@ -82,7 +83,7 @@ namespace CymaticLabs.InfluxDB.Studio.Dialogs
         private void CreateRetentionPolicyDialog_Load(object sender, EventArgs e)
         {
             // Setup help/info tool tips
-            durationToolTip.SetToolTip(durationInfo, Properties.Resources.RP_Duration_Info);
+            durationToolTip.SetToolTip(durationInfo, Resources.RP_Duration_Info);
         }
 
         // Handle form closing

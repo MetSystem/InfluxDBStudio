@@ -89,7 +89,7 @@
             // 
             // createButton
             // 
-            this.createButton.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.CreateRetentionPolicy;
+            this.createButton.Image = global::CymaticLabs.InfluxDB.Studio.Resources.CreateRetentionPolicy;
             this.createButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.createButton.Name = "createButton";
             this.createButton.Size = new System.Drawing.Size(96, 22);
@@ -103,7 +103,7 @@
             // 
             // alterButton
             // 
-            this.alterButton.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.EditRetentionPolicy;
+            this.alterButton.Image = global::CymaticLabs.InfluxDB.Studio.Resources.EditRetentionPolicy;
             this.alterButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.alterButton.Name = "alterButton";
             this.alterButton.Size = new System.Drawing.Size(87, 22);
@@ -117,7 +117,7 @@
             // 
             // dropButton
             // 
-            this.dropButton.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.DropRetentionPolicy;
+            this.dropButton.Image = global::CymaticLabs.InfluxDB.Studio.Resources.DropRetentionPolicy;
             this.dropButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.dropButton.Name = "dropButton";
             this.dropButton.Size = new System.Drawing.Size(88, 22);
@@ -183,7 +183,7 @@
             // 
             // createPolicyToolStripMenuItem
             // 
-            this.createPolicyToolStripMenuItem.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.CreateRetentionPolicy;
+            this.createPolicyToolStripMenuItem.Image = global::CymaticLabs.InfluxDB.Studio.Resources.CreateRetentionPolicy;
             this.createPolicyToolStripMenuItem.Name = "createPolicyToolStripMenuItem";
             this.createPolicyToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.createPolicyToolStripMenuItem.Text = "Create Policy";
@@ -191,7 +191,7 @@
             // 
             // alterPolicyToolStripMenuItem
             // 
-            this.alterPolicyToolStripMenuItem.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.EditRetentionPolicy;
+            this.alterPolicyToolStripMenuItem.Image = global::CymaticLabs.InfluxDB.Studio.Resources.EditRetentionPolicy;
             this.alterPolicyToolStripMenuItem.Name = "alterPolicyToolStripMenuItem";
             this.alterPolicyToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.alterPolicyToolStripMenuItem.Text = "Alter Policy";
@@ -199,7 +199,7 @@
             // 
             // dropPolicyToolStripMenuItem
             // 
-            this.dropPolicyToolStripMenuItem.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.DropRetentionPolicy;
+            this.dropPolicyToolStripMenuItem.Image = global::CymaticLabs.InfluxDB.Studio.Resources.DropRetentionPolicy;
             this.dropPolicyToolStripMenuItem.Name = "dropPolicyToolStripMenuItem";
             this.dropPolicyToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.dropPolicyToolStripMenuItem.Text = "Drop Policy";

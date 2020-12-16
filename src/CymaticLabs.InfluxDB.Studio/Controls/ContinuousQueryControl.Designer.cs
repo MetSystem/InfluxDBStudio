@@ -66,7 +66,7 @@
             // 
             // createCqButton
             // 
-            this.createCqButton.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.CreateContinuousQuery;
+            this.createCqButton.Image = global::CymaticLabs.InfluxDB.Studio.Resources.CreateContinuousQuery;
             this.createCqButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.createCqButton.Name = "createCqButton";
             this.createCqButton.Size = new System.Drawing.Size(81, 22);
@@ -81,7 +81,7 @@
             // 
             // dropCqButton
             // 
-            this.dropCqButton.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.DropContinuousQuery;
+            this.dropCqButton.Image =  global::CymaticLabs.InfluxDB.Studio.Resources.DropContinuousQuery;
             this.dropCqButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.dropCqButton.Name = "dropCqButton";
             this.dropCqButton.Size = new System.Drawing.Size(73, 22);
@@ -96,7 +96,7 @@
             // 
             // backFillButton
             // 
-            this.backFillButton.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.BackFill;
+            this.backFillButton.Image =  global::CymaticLabs.InfluxDB.Studio.Resources.BackFill;
             this.backFillButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.backFillButton.Name = "backFillButton";
             this.backFillButton.Size = new System.Drawing.Size(89, 22);
@@ -154,7 +154,7 @@
             // 
             // createCQToolStripMenuItem
             // 
-            this.createCQToolStripMenuItem.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.CreateContinuousQuery;
+            this.createCQToolStripMenuItem.Image =  global::CymaticLabs.InfluxDB.Studio.Resources.CreateContinuousQuery;
             this.createCQToolStripMenuItem.Name = "createCQToolStripMenuItem";
             this.createCQToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.createCQToolStripMenuItem.Text = "Create CQ";
@@ -162,7 +162,7 @@
             // 
             // dropCQToolStripMenuItem
             // 
-            this.dropCQToolStripMenuItem.Image = global::CymaticLabs.InfluxDB.Studio.Properties.Resources.DropContinuousQuery;
+            this.dropCQToolStripMenuItem.Image =  global::CymaticLabs.InfluxDB.Studio.Resources.DropContinuousQuery;
             this.dropCQToolStripMenuItem.Name = "dropCQToolStripMenuItem";
             this.dropCQToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.dropCQToolStripMenuItem.Text = "Drop CQ";
